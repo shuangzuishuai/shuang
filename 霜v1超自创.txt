@@ -1,0 +1,56 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Window = OrionLib:MakeWindow({Name = "霜中心", HidePremium = false, IntroText = "霜中心"})
+
+local about = Window:MakeTab({
+    Name = "霜制作",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("该脚本免费")
+about:AddParagraph("该脚本完全公开且免费")
+about:AddParagraph("作者:霜")
+
+local Tab =Window:MakeTab({
+	Name = "关于作者",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "复制作者QQ",
+	Callback = function()
+     setclipboard("3557706928")
+  	end
+})
+
+OrionLib:MakeNotification({
+	Name = "霜中心",
+	Content = "欢迎使用霜中心",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+
+local Tab =Window:MakeTab({
+    Name = "通用",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "移动速度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+Tab:AddTextbox({
+	Name = "跳跃高度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
