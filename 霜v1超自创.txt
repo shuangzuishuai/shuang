@@ -74,16 +74,3 @@ Tab:AddButton({
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III", true))()
 	end
 })
-
-local Tab =Window:MakeTab({
-    Name = "blox fruits",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name = "annie hub",
-	Callback = function()
-	 ﻿loadstring(game:HttpGet("https://raw.githubusercontent.com/Anniecuti/Free-Scr/main/Annie-Hub.lua"))()
-	end
-})
