@@ -54,3 +54,43 @@ Tab:AddTextbox({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end
 })
+
+Tab:AddButton({
+    Name = "飞行",
+	Callback = function()
+	 loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
+	end
+})
+
+local Tab =Window:MakeTab({
+    Name = "doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "鹰眼DOORS(和作者是一个人）",
+	Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/shuangzuishuai/shuang/main/door.txt"))()
+	end
+})
+
+local Tab =Window:MakeTab({
+    Name = "blox fruits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "annie hub",
+	Callback = function()
+	 ﻿loadstring(game:HttpGet("https://raw.githubusercontent.com/Anniecuti/Free-Scr/main/Annie-Hub.lua"))()
+	end
+})
+
+Tab:AddButton({
+    Name = "redz",
+	Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+	end
+})
