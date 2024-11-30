@@ -19,6 +19,7 @@ statement:AddParagraph("警告", "脚本不在指定游戏执行，会发生无�
 statement:AddLabel("霜中心作者ROBLOX用户名：PB_cyt")
 statement:AddLabel("我可是霜👿")
 statement:AddLabel("联系方式 - QQ：3557706928")
+statement:AddLabel("更新时间 2024/11/30")
 
 local Currency = Window:MakeTab({
 	Name = "通用功能",
